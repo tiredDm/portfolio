@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 import { PixelartCardComponent } from './pixelartCard/pixelart-card.component';
 import { LinkIconComponent } from './link-icon/link-icon.component';
 import { LowbarComponent } from './lowbar/lowbar.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
     AppComponent
-  , PixelartCardComponent, LinkIconComponent, LowbarComponent],
+  , PixelartCardComponent, LinkIconComponent, LowbarComponent, AboutPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
