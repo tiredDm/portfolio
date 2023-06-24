@@ -13,7 +13,8 @@ import { MapPageComponent } from './map-page/map-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { HighbarComponent } from './highbar/highbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatTooltipModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

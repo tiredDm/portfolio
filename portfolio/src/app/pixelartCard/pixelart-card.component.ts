@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <img src="assets/img/pixelart1.png" class = "image">
     
     <p class="cardName">pixelart-card Name</p>
-    <h1 class ="tooltip">...</h1>
+      <h1 class ="tooltip" matTooltip= "This was one of my first attempts at pixel art and was for a undead boss monster.">...</h1>
   </div> 
  
   `,
