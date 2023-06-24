@@ -1,3 +1,7 @@
 <app-highbar></app-highbar>
 <app-lowbar></app-lowbar>
-<router-outlet></router-outlet>
+
+<div class="container" [@slideInAnimation] = "o.isActivated ? o.activatedRoute : '' ">
+    <router-outlet #o="outlet"></router-outlet>
+</div>
+
