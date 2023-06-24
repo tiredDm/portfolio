@@ -6,11 +6,11 @@ import { MapPageComponent } from './map-page/map-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 const routes: Routes = [
-  {path: 'About',   component: AboutPageComponent}, 
-  {path:'Map',      component: MapPageComponent },
-  {path: 'Projects',component: ProjectsPageComponent },
+  {path: 'About',   component: AboutPageComponent, data: {order : '3'} }, 
+  {path:'Map',      component: MapPageComponent, data: { order : '1'}  },
+  {path: 'Projects',component: ProjectsPageComponent, data: {order : '2'} },
   {path: '' ,       component: ProjectsPageComponent},
-  {path: 'PixelArt',component: PixelartPageComponent}];
+  {path: 'PixelArt',component: PixelartPageComponent, data: { order : '0' } }];
   
 
 @NgModule({
