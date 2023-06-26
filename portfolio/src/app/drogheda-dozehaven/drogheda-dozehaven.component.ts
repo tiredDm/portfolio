@@ -1,21 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-map-page',
+  selector: 'app-drogheda-dozehaven',
   template: `
-  
-  
-
   <div class = "page-layout">
-  <a routerLink = "drogheda"> Maps </a>
 
     <div class = "map-card">
       <div class = "map-layout">
-        <img class = "map" src= "assets/img/maps/Miria.png">
+        <img class = "map" src= "assets/img/maps/Dozehaven-map.png">
         <div class = "drogheda-button"> == </div> 
       </div>
     </div> 
   </div>
+  
   `,
   styles: [
     '.page-layout{display: grid; place-items: center}',
@@ -25,4 +22,4 @@ import { Component } from '@angular/core';
     '.drogheda-button{position: absolute; left: 22%; top: 27%;background-color: #bbb; color: #bbb; border-radius: 50%; border: 0px solid #49b51f}',
   ]
 })
-export class MapPageComponent {}
+export class DroghedaDozehavenComponent {}

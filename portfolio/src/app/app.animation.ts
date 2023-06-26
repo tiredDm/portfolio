@@ -13,6 +13,9 @@ export const slideInAnimation = trigger('slideInAnimation', [
   transition('1 => 2', slideToRight()), 
   transition('0 => 2', slideToRight()),
   transition('* => 3', slideToRight()),
+
+  transition('* => 4' ,slideUp())
+
 ]);
 
 function slideToRight(){
@@ -46,4 +49,37 @@ function slideToLeft(){
           ], { optional: true })
         ])
       ];
+}
+
+function slideUp(){
+  return  [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%', zIndex: 2 }), { optional: true }),
+      group([
+        query(':enter', [
+          style({ transform: 'translateY(-100%)' }),
+          animate('0.6s ease', style({ transform: 'translateY(0%)' }))
+        ], { optional: true }),
+        query(':leave', [
+          style({ transform: 'translateY(0%)' }),
+          animate('0.6s ease', style({ transform: 'translateY(100%)' }))
+        ], { optional: true })
+      ])
+    ];
+}
+
+function slideDown(){
+  return [
+      query(':enter, :leave', style({ position: 'fixed', width: '100%', zIndex: 2 }), { optional: true }),
+      group([
+          query(':enter', [
+            style({ transform: 'translateY(100%)' }),
+            animate('0.6s ease', style({ transform: 'translateY(0%)' }))
+          ], { optional: true }),
+          query(':leave', [
+            style({ transform: 'translateY(0%)' }),
+            animate('0.6s ease', style({ transform: 'translateY(-100%)' }))
+          ], { optional: true })
+        ])
+
+  ];
 }
