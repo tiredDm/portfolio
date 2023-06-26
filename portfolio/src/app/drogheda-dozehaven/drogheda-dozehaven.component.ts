@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-drogheda-dozehaven',
   template: `
   <div class = "page-layout">
-
     <div class = "map-card">
       <div class = "map-layout">
         <img class = "map" src= "assets/img/maps/Dozehaven-map.png">

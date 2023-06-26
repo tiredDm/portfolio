@@ -14,7 +14,10 @@ export const slideInAnimation = trigger('slideInAnimation', [
   transition('0 => 2', slideToRight()),
   transition('* => 3', slideToRight()),
 
-  transition('* => 4' ,slideUp())
+  transition('* => 4' ,slideUp()), 
+  transition('4 => 7', slideUp()),
+
+  transition('7 => *', slideDown())
 
 ]);
 
@@ -56,12 +59,12 @@ function slideUp(){
       query(':enter, :leave', style({ position: 'fixed', width: '100%', zIndex: 2 }), { optional: true }),
       group([
         query(':enter', [
-          style({ transform: 'translateY(-100%)' }),
+          style({ transform: 'translateY(-150%)' }),
           animate('0.6s ease', style({ transform: 'translateY(0%)' }))
         ], { optional: true }),
         query(':leave', [
           style({ transform: 'translateY(0%)' }),
-          animate('0.6s ease', style({ transform: 'translateY(100%)' }))
+          animate('0.6s ease', style({ transform: 'translateY(150%)' }))
         ], { optional: true })
       ])
     ];
@@ -72,12 +75,12 @@ function slideDown(){
       query(':enter, :leave', style({ position: 'fixed', width: '100%', zIndex: 2 }), { optional: true }),
       group([
           query(':enter', [
-            style({ transform: 'translateY(100%)' }),
+            style({ transform: 'translateY(150%)' }),
             animate('0.6s ease', style({ transform: 'translateY(0%)' }))
           ], { optional: true }),
           query(':leave', [
             style({ transform: 'translateY(0%)' }),
-            animate('0.6s ease', style({ transform: 'translateY(-100%)' }))
+            animate('0.6s ease', style({ transform: 'translateY(-150%)' }))
           ], { optional: true })
         ])
 
