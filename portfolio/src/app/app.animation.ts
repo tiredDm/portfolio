@@ -14,9 +14,9 @@ export const slideInAnimation = trigger('slideInAnimation', [
   transition('0 => 2', slideToRight()),
   transition('* => 3', slideToRight()),
 
-  transition('* => 4' ,slideUp()), 
+  transition('1 => 4' ,slideUp()), 
   transition('4 => 7', slideUp()),
-
+  transition('4 => 1', slideDown()),
   transition('7 => *', slideDown())
 
 ]);
