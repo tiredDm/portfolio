@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-pixelart-card',
   template: `
   <div class = "card">
-    <img src="assets/img/pixelart1.png" class = "image">
+    <img src="assets/img/pixelart/pixelart1.png" class = "image">
     
     <p class="cardName">pixelart-card Name</p>
       <h1 class ="tooltip" matTooltip= "This was one of my first attempts at pixel art and was for a undead boss monster.">...</h1>

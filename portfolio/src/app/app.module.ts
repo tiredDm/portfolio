@@ -24,11 +24,12 @@ import { DroghedaRiverideComponent } from './drogheda-riveride/drogheda-riveride
 import { DroghedaOrchidringComponent } from './drogheda-orchidring/drogheda-orchidring.component';
 import { DroghedaForresonComponent } from './drogheda-forreson/drogheda-forreson.component';
 import { DroghedaHopetonComponent } from './drogheda-hopeton/drogheda-hopeton.component';
+import { CardStackComponent } from './card-stack/card-stack.component';
 
 @NgModule({
   declarations: [
     AppComponent
-  , PixelartCardComponent, LinkIconComponent, LowbarComponent, AboutPageComponent, PixelartPageComponent, MapPageComponent, ProjectsPageComponent, HighbarComponent, DroghedaMapComponent, DroghedaRedrockComponent, DroghedaDozehavenComponent, DroghedaRimouthComponent, DroghedaForktownComponent, DroghedaRiverideComponent, DroghedaOrchidringComponent, DroghedaForresonComponent, DroghedaHopetonComponent],
+  , PixelartCardComponent, LinkIconComponent, LowbarComponent, AboutPageComponent, PixelartPageComponent, MapPageComponent, ProjectsPageComponent, HighbarComponent, DroghedaMapComponent, DroghedaRedrockComponent, DroghedaDozehavenComponent, DroghedaRimouthComponent, DroghedaForktownComponent, DroghedaRiverideComponent, DroghedaOrchidringComponent, DroghedaForresonComponent, DroghedaHopetonComponent, CardStackComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
