@@ -3,7 +3,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-card-stack',
   template: `
-  <p>card-stack works!</p>
   <!-- We want a.. Title Card, and then all other cards..-->
   <div class = "card-stack">
     
@@ -25,7 +24,7 @@ import { Component, Input } from '@angular/core';
   `,
   styles: [
     ':root{--gradient: blue;}',
-    '.card-stack{position: relative; display:flex; align-items: center; color: white; font-family: sans-serif}',
+    '.card-stack{position: relative; display:flex; align-items: center; color: white; font-family: sans-serif; margin-top: 60px; margin-bottom: 60px}',
     '.title-card{height: 325px; width: 250px; left: 0px; border-radius: 20px; display: flex; flex-direction: column; gap: 7px; z-index: 5; background: var(--gradient, grey) ; box-shadow: 10px 0 5px -2px black; }',
     '.t{margin: 0px; margin-left: 10px }',  
     '.title{margin-top:70%}',
@@ -34,7 +33,7 @@ import { Component, Input } from '@angular/core';
     '.card:hover{ transform: translateY(-40px)}',
     '.card:hover~.card {transform: translateX(130px)}',
     '.card:not(:first-child) {margin-left:-130px}',
-    '.image{width: 75%}'
+    '.image{width: 65%}'
   ]
 })
 export class CardStackComponent {
