@@ -14,7 +14,7 @@ import { LinkIconComponent } from '../link-icon/link-icon.component';
   <div class ="dark"></div>
   `,
   styles: [
-    '.lbar{width:100vw ;height: 8vh; position: fixed ; left: 0px; bottom: 0px; margin: 0px; padding: 0px; display: flex; flex-direction: row; border: 2px; background-color: #3b3832; z-index: 9; }', 
+    '.lbar{width:100vw ;height: 8vh; position: fixed ; left: 0px; bottom: 0px; margin: 0px; padding: 0px; display: flex; flex-direction: row; border: 2px; background-color: #3b3832; z-index: 9; border-top: 3.5px solid #191a16 }', 
     '.github{position: absolute; left: 2vh; top: 10px;}',
     '.linkedIn{position: absolute; left: 10vh; top: 10px}',
     '.insta{position: absolute; left: 18vh; top: 10px}',
