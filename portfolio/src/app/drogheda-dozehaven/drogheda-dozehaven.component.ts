@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
   `,
   styles: [
     '.page-layout{display: grid; place-items: center}',
-    '.map-card{height:75vh; width: 52vw;  background-color: #3b3832; display: flex; align-items:center; justify-content:center; }',
+    '.map-card{height:75vh; width: 52vw;  background-color: #3b3832; display: flex; align-items:center; justify-content:center; margin-top: 50px }',
     '.map-layout{height: 70vh; width: 44vw; position: relative}',
     '.map{height: 100%; width: 100%;}', 
   ]
